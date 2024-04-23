@@ -5,7 +5,7 @@ body {
   padding: 0;
   height: 100vh;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -18,7 +18,11 @@ body {
 }
 
 #daten {
- font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 label {
@@ -28,7 +32,8 @@ label {
   margin-bottom: 8px;
 }
 
-select, button {
+select,
+button {
   width: 100%;
   padding: 8px;
   border: 2px solid #ddd;
@@ -39,11 +44,13 @@ select, button {
   background-color: #fff;
 }
 
-select:hover, button:hover {
+select:hover,
+button:hover {
   border-color: #aaa;
 }
 
-select:focus, button:focus {
+select:focus,
+button:focus {
   border-color: #5050d2;
   outline: none;
 }

@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Open AI Demo</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="form">
-        <h1>Persona Nonsense</h1>
-        <h2>(Open AI API Demo)</h2>
-        <label for="persona">Schritt 1: Persona wählen</label>
-        <select id="persona" name="persona">
-            <option value="pirate">Pirat</option>
-            <option value="yoda">Yoda</option>
-            <option value="oracel">Orakel</option>
-        </select>
+      <h1>Persona Nonsense</h1>
+      <h2>(Open AI API Demo)</h2>
+      <label for="persona">Schritt 1: Persona wählen</label>
+      <select id="persona" name="persona">
+        <option value="pirate">Pirat</option>
+        <option value="yoda">Yoda</option>
+        <option value="oracle">Orakel</option>
+      </select>
 
-        <label for="thema">Schritt 2: Thema aussuchen</label>
-        <select id="thema" name="thema">
-            <option value="weather">Wettervorhersage</option>
-            <option value="horoscope">Horoskop</option>
-            <option value="news">Breaking News</option>
-        </select>
-        <button id="laden">Start</button>
-	<div id="daten"></div>
+      <label for="thema">Schritt 2: Thema aussuchen</label>
+      <select id="thema" name="thema">
+        <option value="weather">Wettervorhersage</option>
+        <option value="horoscope">Horoskop</option>
+        <option value="news">Breaking News</option>
+      </select>
+      <button id="laden">Start</button>
+      <div id="daten"></div>
+      <button id="play" class="hidden">Anhören</button>
+      <audio id="audioPlayer" class="hidden" controls></audio>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
-
