@@ -1,4 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
+#form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+#daten {
+ font-size: 1.2rem;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+select, button {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  box-sizing: border-box; /* So padding does not affect width */
+  cursor: pointer;
+  background-color: #fff;
+}
+
+select:hover, button:hover {
+  border-color: #aaa;
+}
+
+select:focus, button:focus {
+  border-color: #5050d2;
+  outline: none;
+}
+
+button {
+  background-color: #5050d2;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #3838a8;
+  color: #f4f4f9;
+}

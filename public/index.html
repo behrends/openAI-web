@@ -7,9 +7,25 @@
     <title>Open AI Demo</title>
 </head>
 <body>
-    <h1>Open AI Demo</h1>
-    <button id="laden">Daten laden</button>
-    <div id="daten"></div>
+    <div id="form">
+        <h1>Persona Nonsense</h1>
+        <h2>(Open AI API Demo)</h2>
+        <label for="persona">Schritt 1: Persona wählen</label>
+        <select id="persona" name="persona">
+            <option value="pirat">Pirat</option>
+            <option value="yoda">Yoda</option>
+            <option value="orakel">Orakel</option>
+        </select>
+
+        <label for="thema">Schritt 2: Thema aussuchen</label>
+        <select id="thema" name="thema">
+            <option value="wettervorhersage">Wettervorhersage</option>
+            <option value="horoskop">Horoskop</option>
+            <option value="breaking_news">Breaking News</option>
+        </select>
+        <button id="laden">Start</button>
+	<div id="daten"></div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
