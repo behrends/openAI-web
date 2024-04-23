@@ -12,5 +12,5 @@ Verwendung der [OpenAI](https://openai.com/)-API mit dem
 1. API-Key von OpenAI in Datei `.env` eintragen: \
    `OPENAI_API_KEY=hier_muss_der_API_key_stehen`
 1. Webserver starten: \
-   `npm run dev`
-1. Webanwendung im Browser öffnen (`http://localhost:5173`)
+   `npm start`
+1. Webanwendung im Browser öffnen (`http://localhost:3000`)
