@@ -9,14 +9,16 @@ const app = express();
 
 app.use(express.static('public'));
 
+const pirate = 'Benutze Piratensprache und sprich, als wärst du ein Pirat von den hohen Meeren.'
+
+const weather = 'Erfinde eine kurze Wettervorhersage für morgen (max. 30 Wörter).'
+
 app.get('/api/chat', async (req, res) => {
   const chatCompletion = await openai.chat.completions.create({
     messages: [
       {
-        role: 'system',
-        content: 'Du bist ein hilfreicher KI-Assistent',
         role: 'user',
-        content: 'Was ist die Hauptstadt von Frankreich?',
+        content: `${pirate} ${weather}`,
       },
     ],
     model: 'gpt-4-turbo',
