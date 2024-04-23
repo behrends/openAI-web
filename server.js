@@ -1,15 +1,15 @@
-import Fastify from 'fastify'
+import express from 'express';
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const fastify = Fastify({
-  logger: true
-})
+const app = express();
 
-fastify.get('/api', async function handler (request, reply) {
+app.use(express.static('public'));
+
+app.get('/api/chat', async (req, res) => {
   const chatCompletion = await openai.chat.completions.create({
     messages: [
       {
@@ -22,12 +22,10 @@ fastify.get('/api', async function handler (request, reply) {
     model: 'gpt-4-turbo',
   });
 
-  return { answer: chatCompletion.choices[0].message.content };
-})
+  res.json({ message: chatCompletion.choices[0].message.content });
+});
 
-try {
-  await fastify.listen({ port: 3000 })
-} catch (err) {
-  fastify.log.error(err)
-  process.exit(1)
-}
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server läuft auf http://localhost:${PORT}`);
+});
