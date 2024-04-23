@@ -1,7 +1,7 @@
 # Webanwendung mit OpenAI SDK
 
 Verwendung der [OpenAI](https://openai.com/)-API mit dem
-[JavaScript-SDK](https://platform.openai.com/docs/libraries/typescript-javascript-library) in einer Webanwendung.
+[JavaScript-SDK](https://platform.openai.com/docs/libraries/typescript-javascript-library) in einer Webanwendung mit einem einfachen [Node.js](https://nodejs.org)-Backend auf Basis von [Express](https://expressjs.com).
 
 ## Verwendung:
 
