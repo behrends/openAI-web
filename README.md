@@ -1,7 +1,12 @@
 # Webanwendung mit OpenAI SDK
 
 Verwendung der [OpenAI](https://openai.com/)-API mit dem
-[JavaScript-SDK](https://platform.openai.com/docs/libraries/typescript-javascript-library) in einer Webanwendung mit einem einfachen [Node.js](https://nodejs.org)-Backend auf Basis von [Express](https://expressjs.com).
+[JavaScript-SDK](https://platform.openai.com/docs/libraries/typescript-javascript-library)
+in einer Webanwendung mit einem einfachen [Node.js](https://nodejs.org)-Backend auf
+Basis von [Express](https://expressjs.com).
+
+Verwendet werden die [Chat-](https://platform.openai.com/docs/api-reference/chat/create?lang=node.js)
+und die [Text-to-speech](https://platform.openai.com/docs/api-reference/audio/createSpeech)-APIs von OpenAI.
 
 ## Verwendung:
 
