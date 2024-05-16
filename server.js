@@ -41,7 +41,7 @@ app.get('/api/chat', async (req, res) => {
         content: `${personas[persona]} ${topics[topic]}`,
       },
     ],
-    model: 'gpt-4-turbo',
+    model: 'gpt-4o',
   });
 
   res.json({ message: chatCompletion.choices[0].message.content });
